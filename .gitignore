@@ -1,3 +1,7 @@
+build
+spuclib
+qpsk
+qpsk_v
 # Compiled Object files
 *.slo
 *.lo

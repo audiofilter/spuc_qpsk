@@ -5,10 +5,9 @@ ENDIF()
 PROJECT("spuc qpsk examples")
 message("Project qpsk_examples")
 
-#SET(CMAKE_C_COMPILER "/usr/bin/clang")
-#SET(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+# add various defines to get this to work by default
+ADD_DEFINITIONS(" -fPIC -DSPUCBOOST -DNOFREQ -DNOTIME -DNOFREQC -DNORAND ")
 
-ADD_DEFINITIONS(" -fPIC -DSPUCBOOST")
 INCLUDE_DIRECTORIES(".." "../spuclib/")
 LINK_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../spuclib/build)
 
