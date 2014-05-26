@@ -8,4 +8,9 @@ before_install:
   - brew update
 install:
   - brew install cmake
+before_script:
+  - git clone https://github.com/audiofilter/spuclib.git
+  - cd spuclib
+  - make
+  - cd ..
 script: make
