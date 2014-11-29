@@ -6,10 +6,8 @@ compiler:
   - clang
 before_install:
   - brew update
-# libboost needed for spuclib, not spuc_qpsk
 install:
   - brew install cmake 
-  - brew install boost --with-c++11
 before_script:
   - git clone https://github.com/audiofilter/spuclib.git
   - cd spuclib
